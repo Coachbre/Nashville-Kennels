@@ -1,12 +1,13 @@
 import React from "react"
 import "./Kennel.css"
 import { AnimalCard } from "./animal/AnimalCard";
-import {} from "./location/Location";
-import {} from "./customer/Customer";
-import {} from "./employee/Employee"
+import { LocationCard } from "./location/Location";
+import { CustomerCard } from "./customer/Customer";
+import { EmployeeCard } from "./employee/Employee";
 
 export const Kennel = () => (
-    <>
+    <>  
+    {/* '<>' is a fragment- doesnt need a type  */}
         <h2>Nashville Kennels</h2>
         <small>Loving care when you're not there.</small>
 
@@ -20,29 +21,30 @@ export const Kennel = () => (
             <AnimalCard />
             <AnimalCard />
             <AnimalCard />
+            {/* space between element and closing bracket is required */}
         </article>
 
         <h2>Employees</h2>
         <article className="employees">
-            <EmployeeCard/>
-            <EmployeeCard/>
-            <EmployeeCard/>
+            <EmployeeCard />
+            <EmployeeCard />
+            <EmployeeCard />
         </article>
 
         <h2>Locations</h2>
         <article className="locations">
-            <LocationCard/>
-            <LocationCard/>
+            <LocationCard />
+            <LocationCard />
         </article>
 
         <h2>Customers</h2>
         <article className="locations">
-            <CustomerCard/>
-            <CustomerCard/>
-            <CustomerCard/>
-            <CustomerCard/>
+            <CustomerCard />
+            <CustomerCard />
+            <CustomerCard />
+            <CustomerCard />
         </article>
-    </>
+    </> 
 )
 
 
