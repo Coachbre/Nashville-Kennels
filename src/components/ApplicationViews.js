@@ -1,10 +1,10 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
-import { AnimalCard } from "./animal/AnimalCard"
+import { AnimalList } from "./animal/AnimalList"
 import { EmployeeCard } from "./employee/Employee"
 import { CustomerCard } from "./customer/Customer"
-import { LocationCard } from "./location/Location"
+import { LocationCard } from "./location/LocationCard"
 
 // import { AnimalProvider } from "./animal/AnimalProvider"
 

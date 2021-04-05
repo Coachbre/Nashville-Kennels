@@ -1,11 +1,18 @@
 import React from "react"
 import "./Animal.css"
 
-export const AnimalCard = () => (
-    <section className="animal">
-        <h3 className="animal__name">Doodles</h3>
-        <div className="animal__breed">Breed: Poodle</div>
-        {/* this is JSX, not HTML- will automatically convert 
-        ex: 'className' is the same as class */}
-    </section>
-)
+export const AnimalCard = ({ animal }) => {
+    return (
+      <div className="card">
+        <div className="card-content">
+          <picture>
+            <img src={require('../animal/dog.svg')} alt="My Dog" />
+          </picture>
+          <h3>Name: <span className="card-petname">
+            {animal.name}
+          </span></h3>
+          <p>Breed: {animal.breed}</p>
+        </div>
+      </div>
+    );
+  }
