@@ -9,3 +9,9 @@ export const getEmployeeById = (employeeId) => {
    return fetch(`${remoteURL}/employees/${employeeId}?_expand=location&_expand=name`)
     .then(res => res.json())
   }
+
+export const deleteEmployee = (id) => {
+  return fetch(`${remoteURL}/employees/${id}`, {
+    method: "DELETE"
+  }).then(result => result.json())
+}
