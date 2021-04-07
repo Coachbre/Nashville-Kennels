@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
 //import the components we will need
 import { AnimalCard } from './AnimalCard';
-import { getAllAnimals, getAnimalById } from '../../modules/AnimalManager';
+import { getAllAnimals, getAnimalById, deleteAnimal } from '../../modules/AnimalManager';
+
 
 export const AnimalList = () => {
   // Declaring a state variable (as an empty array)
+  //'animals' is the variable
   const [animals, setAnimals] = useState([]);
-  // -empty array is initial value and the first element of 'animals'
-  //is the current value (can change anytime so most likely never the same)
+  // -the empty array in useState() is INITIAL value of animals, 
+  // and the first element of 'animals' is the CURRENT value (can change anytime so most likely never the same)
   //setAnimals() is used to change the value of 'animals' that is stored in the state
-
-// name of variable: animals
-
-// setAnimals is used to change the value of animals
-
-// useState('any value') sets the initial value of animals 
 
   const getAnimals = () => {
     // After the data comes back from the API, we
@@ -32,13 +28,27 @@ export const AnimalList = () => {
     getAnimals();
   }, []);
 
+  const handleDeleteAnimal = id => {
+    deleteAnimal(id)
+    .then(() => getAllAnimals()
+    .then(setAnimals));
+  };
+
+
   // Finally we use .map() to "loop over" the animals array to show a list of animal cards
   return (
     <div className="container-cards">
-      {animals.map(animal => <AnimalCard key={animal.id} animal={animal} />
+      {animals.map(animal => 
+      <AnimalCard 
+      key={animal.id}
+      animal={animal}
+      handleDeleteAnimal={handleDeleteAnimal} />
       )}
     </div>
     //{animal.id} and {animal} (both variable values) are being passed to props which is a 'box' of anything   
     // you'd like to share between components
   );
+  
 };
+
+
