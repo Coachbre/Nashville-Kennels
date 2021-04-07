@@ -15,7 +15,7 @@ export const LocationList = () => {
     };
 
     useEffect(() => {
-        getAnimalsById();
+        getLocations();
     }, []);
 
     return (

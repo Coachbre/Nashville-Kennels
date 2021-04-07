@@ -9,12 +9,23 @@
             "id": 1,
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct"
+        },
+        {
+            "id": 2,
+            "name": "Cookie Baker",
+            "address": "50 Walnut Ct"
         }
     ],
     "employees": [
         {
+            "id": 1,
             "name": "Samuel",
             "location": "Kennels North"
+        },
+        {
+            "id": 2,
+            "name": "Grove",
+            "location": "Kennels South"
         }
     ],
     "locations": [

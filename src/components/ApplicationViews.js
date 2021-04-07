@@ -2,9 +2,9 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalList } from "./animal/AnimalList"
-import { EmployeeCard } from "./employee/Employee"
+import { EmployeeList } from "./employee/EmployeeList"
 import { CustomerList } from "./customer/CustomerList"
-import { LocationCard } from "./location/LocationCard"
+import { LocationList } from "./location/LocationList"
 
 // import { AnimalProvider } from "./animal/AnimalProvider"
 
@@ -22,7 +22,7 @@ export const ApplicationViews = () => {
             </Route>
 
             <Route path="/employees">
-                <EmployeeCard />
+                <EmployeeList />
             </Route>
 
             <Route path="/customers">
@@ -30,7 +30,7 @@ export const ApplicationViews = () => {
             </Route>
 
             <Route path="/locations">
-                <LocationCard />
+                <LocationList />
             </Route>
         </>
     )

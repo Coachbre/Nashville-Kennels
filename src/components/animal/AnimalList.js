@@ -39,6 +39,6 @@ export const AnimalList = () => {
       )}
     </div>
     //{animal.id} and {animal} (both variable values) are being passed to props which is a 'box' of anything   
-    // you'd like to share between components (functions/key values/etc)
+    // you'd like to share between components
   );
 };

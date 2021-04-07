@@ -5,6 +5,7 @@ import "./Animal.css"
 //child component can recieve props from the parent component 
 //displays props using dot notation
 export const AnimalCard = ({ animal }) => {
+  //animal is passed in as a parameter (module recognizes due to it being a props)
     return (
       <div className="card">
         <div className="card-content">

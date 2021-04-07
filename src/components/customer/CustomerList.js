@@ -3,12 +3,13 @@ import {getAllCustomers } from '../../modules/CustomerManager';
 import { CustomerCard } from './CustomerCard';
 
 export const CustomerList = () => {
-    const [custtomers, setCustomer] = useState([]);
+    const [customers, setCustomers] = useState([]);
 
 
     const getCustomers = () => {
-        return getAllCustomers().then(customersFromAPI => {
-            console.log(customersFromAPI);
+        return getAllCustomers()
+        .then(customersFromAPI => {
+            setCustomers(customersFromAPI)
         });
     };
 
@@ -21,8 +22,8 @@ export const CustomerList = () => {
     //the empty array tells React to run the function on the FIRST RENDER
 
     return (
-        <div className="containr-cards">
-            customers should go here in a bit!
+        <div className="container-cards">
+           {customers.map(customer => <CustomerCard key={customer.id} customer={customer}/>)}
         </div>
     );
 };
