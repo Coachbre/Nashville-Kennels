@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalList } from "./animal/AnimalList"
 import { EmployeeCard } from "./employee/Employee"
-import { CustomerCard } from "./customer/Customer"
+import { CustomerList } from "./customer/CustomerList"
 import { LocationCard } from "./location/LocationCard"
 
 // import { AnimalProvider } from "./animal/AnimalProvider"
@@ -26,7 +26,7 @@ export const ApplicationViews = () => {
             </Route>
 
             <Route path="/customers">
-                <CustomerCard />
+                <CustomerList />
             </Route>
 
             <Route path="/locations">
