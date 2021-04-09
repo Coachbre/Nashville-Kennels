@@ -3,22 +3,34 @@
     {
       "id": 1,
       "name": "Doodles",
-      "breed": "Poodle"
+      "breed": "Poodle",
+      "locationId":1,
+      "employeeId":1,
+      "customerId":1
     },
     {
       "id": 2,
       "name": "Nala",
-      "breed": "Pomeranian"
+      "breed": "Pomeranian",
+      "locationId":2,
+      "employeeId":2,
+      "customerId":2
     },
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Pitbull"
+      "breed": "Pitbull",
+      "locationId":3,
+      "employeeId":3,
+      "customerId":3
     },
     {
       "id": 4,
       "name": "Roxy",
-      "breed": "Greyhound"
+      "breed": "Greyhound",
+      "locationId":1,
+      "employeeId":1,
+      "customerId":1
     }
   ],
   "customers": [
@@ -42,29 +54,40 @@
     {
       "id": 1,
       "name": "Samuel",
-      "location": "Kennels North"
+      "location": "Nashville North"
     },
     {
       "id": 2,
-      "name": "Heyyy",
-      "location": "Kennels Center"
+      "name": "Nick",
+      "location": "Nashville West"
+    },
+    {
+      "id": 3,
+      "name": "Lisa",
+      "location": "Nashville South"
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North",
-      "address": "8422 Johnson Pike"
+      "address": "8422 Johnson Pike",
+      "hours": "9-5",
+      "employeeId":1
     },
     {
       "id": 2,
       "name": "Nashville West",
-      "address": "5 Willow Pike"
+      "address": "5 Willow Pike",
+      "hours": "8-2",
+      "employeeId":2
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Nashville South",
-      "address": "876 Lion Pike"
+      "address": "876 Lion Pike",
+      "hours": "10-6",
+      "employeeId":3
     }
   ]
 }

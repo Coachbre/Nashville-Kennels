@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Animal.css"
 
 //Props is short for properties and they are used to pass data between React components
@@ -16,6 +17,11 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
             {animal.name}
           </span></h3>
           <p>Breed: {animal.breed}</p>
+
+          <Link to={`/animals/${animal.id}`}>
+            <button>Details</button>
+          </Link>
+
           <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>
             Discharge This Doggo!
           </button>
