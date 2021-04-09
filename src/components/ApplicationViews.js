@@ -1,11 +1,17 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
+
 import { AnimalList } from "./animal/AnimalList"
+import { AnimalDetail } from "./animal/AnimalDetail"
+
 import { EmployeeList } from "./employee/EmployeeList"
+
 import { CustomerList } from "./customer/CustomerList"
+
 import { LocationList } from "./location/LocationList"
-import { AnimalDetail } from "./animal/AnimalDetail";
+import { LocationDetail } from "./location/LocationDetail"
+
 
 // import { AnimalProvider } from "./animal/AnimalProvider"
 
@@ -46,6 +52,10 @@ export const ApplicationViews = () => {
 
             <Route path="/locations">
                 <LocationList />
+            </Route>
+
+            <Route path="/locations/:locationId(\d+)">
+                <LocationDetail />
             </Route>
         </>
     )
