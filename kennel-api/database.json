@@ -73,21 +73,21 @@
       "name": "Nashville North",
       "address": "8422 Johnson Pike",
       "hours": "9-5",
-      "employeeId": 1
+      "employeeId":1
     },
     {
       "id": 2,
       "name": "Nashville West",
       "address": "5 Willow Pike",
       "hours": "8-2",
-      "employeeId": 2
+      "employeeId":2
     },
     {
       "id": 3,
       "name": "Nashville South",
       "address": "876 Lion Pike",
       "hours": "10-6",
-      "employeeId": 3
+      "employeeId":3
     }
   ]
 }

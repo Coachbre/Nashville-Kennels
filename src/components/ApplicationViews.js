@@ -50,7 +50,7 @@ export const ApplicationViews = () => {
                 <CustomerList />
             </Route>
 
-            <Route path="/locations">
+            <Route exact path="/locations">
                 <LocationList />
             </Route>
 

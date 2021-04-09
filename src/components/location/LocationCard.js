@@ -8,7 +8,7 @@ export const LocationCard = ({location, handleDeleteLocation}) => (
         <h3 className="location_name">{location.name}</h3>
         <div className="location_address">{location.address}</div>
 
-        <Link to={`/location/${location.id}`}>
+        <Link to={`/locations/${location.id}`}>
             <button>Details</button>
         </Link>
 
