@@ -12,8 +12,5 @@ export const LocationCard = ({location, handleDeleteLocation}) => (
             <button>Details</button>
         </Link>
 
-        <button type="button" onClick={() => handleDeleteLocation(location.id)}>
-            Close This Location
-        </button>
     </section>
 )
