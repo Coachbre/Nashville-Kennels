@@ -23,7 +23,6 @@ export const AnimalDetail = () => {
   
     useEffect(() => {
       //getAnimalById(id) from AnimalManager and hang on to the data; put it into state
-      console.log("useEffect", animalId)
       getAnimalById(animalId)
         .then(animal => {
           setAnimal({
@@ -45,9 +44,11 @@ export const AnimalDetail = () => {
         {/* What's up with the question mark???? See below.*/}
         <div className="animal__owner">Owner: {animal.customer?.name}</div>
         <div className="animal__location">Location: {animal.location?.name}</div>
+        
         <button type="button" disabled={isLoading} onClick={handleDelete}>
           Discharge This Doggo!
         </button>
+
       </section>
     );
   }
